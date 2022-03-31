@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Adaugam metatag-urile pentru Google -->
+    <title>Clonă IT School</title>
+    <link rel="shortcut icon" type="imgage/png" href="../Pictures/Untitled.png">
+    <meta name="description" content="O replică a site-ului itschool.ro">
+    <!-- Includem font-urile prima oara -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <!-- Pentru iconite -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Includem CSS-urile noastre -->
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/courses.css">
+</head>
+
+<body>
+    <nav>
+        <div class="container">
+            <a href="../index.html" class="logo-link">
+                <img src="https://www.itschool.ro/images/logo-itschool-dark.svg" alt="itschool logo">
+            </a>
+            <div class="menu-icon-container">
+                <!-- Iconita de meniu + checkbox-ul sunt pentru mobile. -->
+                <span class="material-icons menu-icon">
+                    menu
+                </span>
+                <input type="checkbox">
+                <ul>
+                    <li>
+                        <a href="courses.html">
+                            Cursuri Online
+                        </a>
+                    </li>
+                    <li class="about-us">
+                        <a href="about.html">
+                            Despre Noi
+                            <!-- Iconita luata de pe Material Icons. -->
+                            <span class="material-icons arrow-down-icon">
+                                arrow_drop_down
+                            </span>
+                        </a>
+                        <!-- Submeniul afisat la hover pe "Despre noi" -->
+                        <div class="submenu">
+                            <a href="../index.html">IT School</a>
+                            <a href="about.html">Despre Noi</a>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="contact.html">
+                            Contact
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="welcome">
+            <div class="container">
+                <h1>Cursuri IT Online, live</h1>
+            </div>
+        </section>
+
+        <section class="courses">
+            <div class="container grid">
+                <h2>Programe de pregătire</h2>
+                <p class="main-paragraph">Acum este posibil să te pregătești pentru o carieră în IT din confortul și siguranța casei tale. Cursurile se vor desfășura în mediul online, prin <strong>sesiuni de training interactive, live,</strong> alături de trainer. Dacă îți dorești să faci parte din această industrie, începe astăzi un program de pregătire care îți oferă șanse reale de angajare după absolvire.</p>
+                <div class="courses-container">
+                    <div class="course-wrapper">
+                        <div class="course">
+                            <img src="data:image/jpeg;base64,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" alt="" class="presentation-image">
+                            <div class="content">
+                                <h3>Programare Python</h3>
+                                <p class="certification">Certificare <img src="https://e7.pngegg.com/pngimages/120/1007/png-clipart-microsoft-logo-technology-computer-software-company-microsoft-angle-company.png" alt="" class="microsoft-logo"></p>
+                                <div class="details">
+                                    <span class="date">
+                                        <span class="material-icons">
+                                            today
+                                        </span>
+                                        <span>În curând</span>
+                                    </span>
+                                    <span class="duration-months">
+                                        <span class="material-icons">
+                                            business_center
+                                        </span>
+                                        <span>5 luni</span>
+                                    </span>
+                                    <span class="duration-hours">
+                                        <span class="material-icons">
+                                            schedule
+                                        </span>
+                                        <span>100 ore</span>
+                                    </span>
+                                </div>
+                                <a href="#">Detalii</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="course-wrapper">
+                        <div class="course">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDgJjCvqwkW_ivBuEBCiIWBttuKxiw4A3gyQ&usqp=CAU" alt="" class="presentation-image">
+                            <div class="content">
+                                <h3>Web Development</h3>
+                                <p class="certification">Certificare <img src="https://e7.pngegg.com/pngimages/120/1007/png-clipart-microsoft-logo-technology-computer-software-company-microsoft-angle-company.png" alt=""
+                                        class="microsoft-logo"></p>
+                                <div class="details">
+                                    <span class="date">
+                                        <span class="material-icons">
+                                            today
+                                        </span>
+                                        <span>În curând</span>
+                                    </span>
+                                    <span class="duration-months">
+                                        <span class="material-icons">
+                                            business_center
+                                        </span>
+                                        <span>5 luni</span>
+                                    </span>
+                                    <span class="duration-hours">
+                                        <span class="material-icons">
+                                            schedule
+                                        </span>
+                                        <span>100 ore</span>
+                                    </span>
+                                </div>
+                                <a href="#">Detalii</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="course-wrapper">
+                        <div class="course">
+                            <img src="data:image/jpeg;base64,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" alt="" class="presentation-image">
+                            <div class="content">
+                                <h3>Programare Java</h3>
+                                <p class="certification">Certificare <img src="https://e7.pngegg.com/pngimages/120/1007/png-clipart-microsoft-logo-technology-computer-software-company-microsoft-angle-company.png" alt=""
+                                        class="microsoft-logo"></p>
+                                <div class="details">
+                                    <span class="date">
+                                        <span class="material-icons">
+                                            today
+                                        </span>
+                                        <span>În curând</span>
+                                    </span>
+                                    <span class="duration-months">
+                                        <span class="material-icons">
+                                            business_center
+                                        </span>
+                                        <span>5 luni</span>
+                                    </span>
+                                    <span class="duration-hours">
+                                        <span class="material-icons">
+                                            schedule
+                                        </span>
+                                        <span>100 ore</span>
+                                    </span>
+                                </div>
+                                <a href="#">Detalii</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>IT School România © 2021. Toate drepturile rezervate.</p>
+        </div>
+    </footer>
+</body>
+
+</html>

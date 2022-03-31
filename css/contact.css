@@ -1,0 +1,126 @@
+.welcome {
+    background-color: #141e4c;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.welcome h1 {
+    text-align: center;
+}
+@media (max-width: 768px) {
+    .welcome h1 {
+        font-size: 32px;
+    }
+}
+
+.contact h2 {
+    text-align: center;
+    padding-top: 28px;
+}
+
+.contact h2, .contact .main-paragraph, .contact .contact-wrapper {
+    margin-bottom: 28px;
+}
+
+.contact .contact-wrapper { 
+    display: flex;
+}
+
+.contact .material-icons {
+    vertical-align: middle;
+    color: var(--text-primary);
+}
+
+.contact ul, .contact form {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+}
+.contact li {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 8px;
+    margin-bottom: 32px;
+    border-bottom: 1px solid #ddd;
+}
+
+.contact .contact-wrapper p, .contact a, .contact label, .contact input, .contact textarea {
+    font-size: 14px;
+}
+
+.contact .contact-wrapper p:not(.description),
+.contact label,
+.contact input, 
+.contact textarea {
+    color: #2b2922;
+}
+
+.contact a, .contact .description, .contact input::placeholder {
+    color: #8e8e8e;
+}
+
+.contact a:hover {
+    color: #101d42;
+} 
+
+.contact label {
+    margin-bottom: 4px;
+}
+
+.contact input, .contact textarea {
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 16px;
+}
+
+.contact input:focus, .contact textarea:focus {
+    border-color: #8e8e8e;
+    outline: none;
+}
+.contact textarea {
+    font-family: inherit;
+    height: 100px;
+}
+
+
+.contact input[type="submit"] {
+    font-size: 14px;
+    text-align: center;
+
+    color:white;
+    background-color: #2bb686;
+
+    border: 1px solid color #2bb686;
+    border-radius: 5px;
+
+    width: 100px;
+
+
+
+}
+@media (max-width: 768px) {
+    .contact .contact-wrapper {
+        flex-direction: column;
+    }
+
+    .contact ul, .contact form {
+        width: 100%;
+        padding: 0;
+    }
+
+    .contact li {
+        margin-bottom: var(--spacing-medium);
+    }
+
+    .contact li:last-of-type {
+        margin-bottom: var(--spacing-large);
+    }
+
+    .contact input[type="submit"] {
+        margin-bottom: 0;
+    } 
+}
