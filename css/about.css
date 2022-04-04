@@ -27,6 +27,10 @@
     flex-wrap: wrap;
 }
 
+h2 {
+    color: blue;
+}
+
 .trainers .trainer-wrapper {
     width: 25%;
     padding: 0 var(--spacing-small);
